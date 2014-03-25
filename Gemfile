@@ -6,6 +6,7 @@ gem 'rails', '4.0.3'
 # Use not sqlite3 but postgres as the database for Active Record
 group :production, :stating do
     gem 'pg'
+  	gem 'rails_12factor'
 end
 group :development, :test do
     gem 'sqlite3', :require => 'sqlite3'
