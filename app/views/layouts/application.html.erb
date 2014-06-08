@@ -1,27 +1,38 @@
+<!-- START:head -->
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Depot</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <title>Pragprog Books Online Store</title>
+  <%= stylesheet_link_tag    "application", media: "all",
+    "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-  <style type="text/css">
-  	.banner {
-  		width: 100%;
-  		height: 100px;
-  		background-color: #CCC;
-  	}
-  </style>
 </head>
-<body class='<%= controller.controller_name %>'>
-	<div class="banner">
-		<h1>generic title</h1>
-		<ul>generic menu
-			<li>menu 1</li>
-		</ul>
-	</div>
-	
-<%= yield %>
+<!-- END:head -->
+<body class="<%= controller.controller_name %>">
+  <div id="banner">
+    <%= image_tag("logo.png") %>
+    <%= @page_title || "Pragmatic Bookshelf" %>
+  </div>
+  <div id="columns">
+    <div id="side">
+<!-- START_HIGHLIGHT -->
+      <div id="cart">
+        <%= render @cart %>
+      </div>
 
+<!-- END_HIGHLIGHT -->
+      <ul>
+        <li><a href="http://www....">Home</a></li>
+        <li><a href="http://www..../faq">Questions</a></li>
+        <li><a href="http://www..../news">News</a></li>
+        <li><a href="http://www..../contact">Contact</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <%= yield %>
+    </div>
+  </div>
 </body>
 </html>
+
