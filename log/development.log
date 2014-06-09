@@ -40140,3 +40140,477 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-10 00:27:34
 
 
 Started GET "/assets/logo.png" for 127.0.0.1 at 2014-06-10 00:27:34 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+Processing by StoreController#index as HTML
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 22]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (3.5ms)
+  [1m[35mLineItem Exists (0.1ms)[0m  SELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 22]]
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 22]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1[0m  [["id", 10]]
+  Rendered line_items/_line_item.html.erb (1.6ms)
+  Rendered carts/_cart.html.erb (3.0ms)
+Completed 200 OK in 69ms (Views: 66.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/charges.css?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/charges.js?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-06-10 00:28:39 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+Processing by StoreController#index as HTML
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 22]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."updated_at" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."title" ASC
+  Rendered store/index.html.erb within layouts/application (3.2ms)
+  [1m[36mLineItem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 22]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?  [["cart_id", 22]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1  [["id", 10]]
+  Rendered line_items/_line_item.html.erb (1.5ms)
+  Rendered carts/_cart.html.erb (3.1ms)
+Completed 200 OK in 118ms (Views: 116.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/charges.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/charges.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-06-10 00:29:37 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-10 00:29:38 +0200
+Processing by StoreController#index as HTML
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 22]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (3.2ms)
+  [1m[35mLineItem Exists (0.1ms)[0m  SELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 22]]
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 22]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1[0m  [["id", 10]]
+  Rendered line_items/_line_item.html.erb (1.4ms)
+  Rendered carts/_cart.html.erb (2.7ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:38 +0200
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:38 +0200
+
+
+Started GET "/assets/charges.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:38 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:38 +0200
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:38 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:38 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:38 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/charges.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+Processing by StoreController#index as HTML
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 22]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."updated_at" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."title" ASC
+  Rendered store/index.html.erb within layouts/application (3.2ms)
+  [1m[36mLineItem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 22]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?  [["cart_id", 22]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1  [["id", 10]]
+  Rendered line_items/_line_item.html.erb (1.4ms)
+  Rendered carts/_cart.html.erb (2.7ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/charges.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:39 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/charges.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+Processing by StoreController#index as HTML
+  [1m[36mCart Load (0.1ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1[0m  [["id", 22]]
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."updated_at" DESC LIMIT 1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."title" ASC[0m
+  Rendered store/index.html.erb within layouts/application (4.1ms)
+  [1m[35mLineItem Exists (0.1ms)[0m  SELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1  [["cart_id", 22]]
+  [1m[36mLineItem Load (0.1ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 22]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1  [["id", 9]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1[0m  [["id", 10]]
+  Rendered line_items/_line_item.html.erb (1.5ms)
+  Rendered carts/_cart.html.erb (3.0ms)
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/charges.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/charges.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+Processing by StoreController#index as HTML
+  [1m[35mCart Load (0.1ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", 22]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."updated_at" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."title" ASC
+  Rendered store/index.html.erb within layouts/application (3.1ms)
+  [1m[36mLineItem Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "line_items" WHERE "line_items"."cart_id" = ? LIMIT 1[0m  [["cart_id", 22]]
+  [1m[35mLineItem Load (0.1ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = ?  [["cart_id", 22]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY "products"."id" ASC LIMIT 1  [["id", 10]]
+  Rendered line_items/_line_item.html.erb (1.6ms)
+  Rendered carts/_cart.html.erb (3.1ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/charges.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/carts.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/line_items.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/store.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/jquery.ui.effect-blind.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/line_items.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/charges.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/store.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-10 00:29:40 +0200
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-06-10 00:29:40 +0200

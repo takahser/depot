@@ -19,7 +19,7 @@
   background: #1682ba;
   padding: 10px;
   border-bottom: 2px solid;
-  font: small-caps 40px/40px "Times New Roman", serif;
+  font: small-caps 40px/40px sans-serif;
   color: #FFF;
   text-align: center;
   display: block;
@@ -130,7 +130,7 @@ display: none
 }
 #cssmenu {
     width: 100%;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: sans-serif;
     color: #ffffff;
 }
 #cssmenu ul {
@@ -294,7 +294,7 @@ display: none
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:arial;
+  font-family:sans-serif;
   font-size:13px;
   padding:6px 24px;
   text-decoration:none;
