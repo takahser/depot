@@ -28,6 +28,10 @@
         <% end %>
       <% end %>
 
+      <% if @charges %>
+          <%= render @charges %>
+      <% end %>
+
     </div>
     <div id="main">
       <%= yield %>

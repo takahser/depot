@@ -1,0 +1,9 @@
+<%= form_tag charges_path do %>
+	<script src="https://checkout.stripe.com/checkout.js" 
+		class="stripe-button"
+		data-key="sk_test_gp9PsCjvj6MyLYVhdxW93qCs"
+		data-name="some article"
+		data-description="12 x article ($245)"
+		data-amount="500">
+	</script>
+<% end %>

@@ -39,6 +39,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# stripe for checkout
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
