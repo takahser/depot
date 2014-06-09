@@ -2,7 +2,7 @@
 	<p id="notice"><%= notice %></p> 
 <% end %>
 
-<h1>Your Pragmatic Catalog</h1>
+<h1>ze Catalog</h1>
  
 <% cache ['store', Product.latest] do %>
 	<% @products.each do |product| %>
@@ -23,6 +23,7 @@
 	<% end %>
 <% end %>
 
+<!--
 <p>
 	It is now <% Time.now %>
 </p>
@@ -38,3 +39,4 @@
 		 word.capitalize 
 	 end.join(' ').reverse %>
 </p>
+-->
