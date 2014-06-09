@@ -14,14 +14,28 @@
     <%= image_tag("logo.png") %>
     <%= @page_title || "ze mvc online shop" %>
   </div>
+
+  
+
+  <!--<ul>
+    <li><a href="http://limitless-dawn-8147.herokuapp.com/">Home</a></li>
+    <li><a href="http://limitless-dawn-8147.herokuapp.com/products">Products</a></li>
+  </ul>-->
+
   <div id="columns">
     <div id="side">
       
-      <ul>
-        <li><a href="http://limitless-dawn-8147.herokuapp.com/">Home</a></li>
-        <li><a href="http://limitless-dawn-8147.herokuapp.com/products">Products</a></li>
-      </ul>
-      
+      <div id='cssmenu'>
+        <ul>
+            <li><a href='http://limitless-dawn-8147.herokuapp.com/'><span>Home</span></a></li>
+            <li><a href='http://limitless-dawn-8147.herokuapp.com/products'><span>Products</span></a></li>
+        </ul>
+      </div>
+
+      <p class="dateInfo">
+        <%= Time.now.strftime("%d.%m.%Y, %H:%M Uhr") %>
+      </p>
+
       <% if @cart %>
         <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
           <%= render @cart %>
