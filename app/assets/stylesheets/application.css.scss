@@ -17,16 +17,16 @@
 
 #banner {
   background: #1682ba;
-  padding: 10px;
+  padding: 20px;
   border-bottom: 2px solid;
-  font: small-caps 40px/40px sans-serif;
+  font: 50px/50px 'Amatic SC', cursive;
   color: #FFF;
   text-align: center;
   display: block;
 
   img {
     float: left;
-    width: 40px;
+    width: 50px;
   }
 }
 
@@ -40,7 +40,7 @@
 }
 
 #columns {
-  background: #ABD1E6;
+  background: #72B7DD;
 
   #main {
     margin-left: 17em;
@@ -53,7 +53,7 @@
     float: left;
     padding: 1em 2em;
     width: 13em;
-    background: #ABD1E6;
+    background: #72B7DD;
 
     form, div {
       display: inline;
@@ -86,8 +86,10 @@
         list-style: none;
 
         a {
-          color: #ABD1E6;
-          font-size: small;
+          /*color: #ABD1E6;*/
+          color: #FFF;
+          font-size: 150%;
+          font-family: 'Amatic SC', cursive;
         }
       }
     }
@@ -115,7 +117,10 @@ display: none
 } }
 }
 
-/* Navigation Bar */
+
+/****************** 
+  navigation styles 
+******************/
 #cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a {
     margin: 0;
     padding: 0;
@@ -129,8 +134,8 @@ display: none
     box-sizing: border-box;
 }
 #cssmenu {
-    width: 100%;
-    font-family: sans-serif;
+    width: 10%;
+    font-family: 'Amatic SC', cursive ! important;
     color: #ffffff;
 }
 #cssmenu ul {
@@ -144,9 +149,9 @@ display: none
 }
 #cssmenu > ul > li > a {
     padding: 15px 20px;
-    border-left: 1px solid #1682ba;
-    border-right: 1px solid #1682ba;
-    border-top: 1px solid #1682ba;
+    border-left: 0px solid #72B7DD;
+    border-right: 0px solid #72B7DD;
+    border-top: 2px solid #72B7DD;
     cursor: pointer;
     z-index: 2;
     font-size: 14px;
@@ -154,13 +159,16 @@ display: none
     text-decoration: none;
     color: #ffffff;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
-    background: #36aae7;
-    background: -webkit-linear-gradient(#36aae7, #1fa0e4);
-    background: -moz-linear-gradient(#36aae7, #1fa0e4);
-    background: -o-linear-gradient(#36aae7, #1fa0e4);
-    background: -ms-linear-gradient(#36aae7, #1fa0e4);
-    background: linear-gradient(#36aae7, #1fa0e4);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    background: #1682ba;
+    /*
+      background: #36aae7;
+      background: -webkit-linear-gradient(#36aae7, #1fa0e4);
+      background: -moz-linear-gradient(#36aae7, #1fa0e4);
+      background: -o-linear-gradient(#36aae7, #1fa0e4);
+      background: -ms-linear-gradient(#36aae7, #1fa0e4);
+      background: linear-gradient(#36aae7, #1fa0e4);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    */
 }
 #cssmenu > ul > li > a:hover, #cssmenu > ul > li.active > a, #cssmenu > ul > li.open > a {
     color: #eeeeee;
@@ -173,10 +181,10 @@ display: none
 }
 #cssmenu > ul > li.open > a {
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.15);
-    border-bottom: 1px solid #1682ba;
+    border-bottom: 1px solid #72B7DD;
 }
 #cssmenu > ul > li:last-child > a, #cssmenu > ul > li.last > a {
-    border-bottom: 1px solid #1682ba;
+    border-bottom: 1px solid #72B7DD;
 }
 .holder {
     width: 0;
@@ -205,7 +213,6 @@ display: none
     border-left: 2px solid #ffffff;
 }
 #cssmenu > ul > li > a:hover > span::after, #cssmenu > ul > li.active > a > span::after, #cssmenu > ul > li.open > a > span::after {
-    border-color: #eeeeee;
 }
 .holder::before {
     top: 18px;
@@ -228,7 +235,7 @@ display: none
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 #cssmenu ul ul li:hover > a, #cssmenu ul ul li.open > a, #cssmenu ul ul li.active > a {
-    background: #424852;
+    background: #4BAADD;
     color: #ffffff;
 }
 #cssmenu ul ul li:first-child > a {
@@ -267,14 +274,13 @@ display: none
     transform: rotate(-135deg);
 }
 #cssmenu ul ul li.active > a::after, #cssmenu ul ul li.open > a::after, #cssmenu ul ul li > a:hover::after {
-    border-color: #ffffff;
 }
 
 
 
-/* button styles */
-
-
+/****************** 
+  button styles 
+******************/
 .myButton {
   -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
   -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
